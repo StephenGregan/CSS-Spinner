@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<title>CSS Spinners</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main">
+	<p>Hello my name is Stephen</p>
+</div>
+<script>
+	document.querySelector('.main p').style.display = "none";
+	document.querySelector('.main').classList.add('spinner-3');
+	setTimeout( () => {
+		document.querySelector('.main').classList.remove('spinner-3');
+		document.querySelector('.main p').style.display = "block";
+	}, 4000);
+</script>
+</body>
+</html>>
